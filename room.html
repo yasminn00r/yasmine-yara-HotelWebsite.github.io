@@ -7,123 +7,374 @@
         <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
         
+        <style>
+            .rest{
+            
+                color: #fff;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-content: stretch;
+            }
+            
+        
+            .right-col{
+
+                float: right;
+                margin-right: 6%;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                background: #c9c9c9d0;
+                border-radius: 50%;
+                
+                
+            }
+            #icon{
+                width: 80px;
+                cursor: pointer;
+                
+            }
+    
+           
+        </style>
        
     </head>
     <body>
-        <section class = "rooms sec-width" id = "rooms">
-            <div class = "title">
-                <p style="color:rgb(117, 0, 0);" style="font-size:35px;">Rooms</p>
-            </div>
-            <div class = "rooms-container">
-               
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "https://pix6.agoda.net/hotelImages/2287257/346581508/df3d35069c8c4910390be75fd6b5f48d.jpg?s=1024x768" alt = "room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3><ins>TWIN ROOM</ins></h3>
-                        <p>Room size: 24 m²/258 ft²</p>
-                         <p>Non-smoking</p>  
-                         <p>2 single beds</p> 
-                        <br>
-                        <p>Maximum number of Persons is <b>FOUR</b> .</p>
-                        <p class = "rate">
-                            <span>199.99LE /</span> Per Night
-                        </p>
-                        <a href="registration.html" target="_blank">
-                            <button type = "button" class = "btn">BOOK NOW</button>
-                        </a>
-                        <div class="room-service">
-                            <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
-                            <a href="service.html">
-                                <button type = "button" class = "btn">OUR SERVICE</button>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </article>
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "https://pix6.agoda.net/hotelImages/2287257/15336237/ebcae517d50f03fbfdcdf82b5c49509a.jpg" height="370" alt = "room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3><ins>DOUBLE ROOM</ins> </h3>
-                        <p>Room size: 29 m²/312 ft²</p>
-                        <p> Non-smoking</p>
-                        <p>1 queen bed</p>
-                        <br>
-                        <p>Maximum number of Persons is <b>TWO</b> .</p>
-                        <p class = "rate">
-                            <span>149.99LE /</span> Per Night
-                        </p>
-                        <a href="registration.html" target="_blank">
-                            <button type = "button" class = "btn">BOOK NOW</button>
-                            
-                        </a>
-                        <div class="room-service">
-                            <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
-                            <a href="service.html" >
-                                <button type = "button" class = "btn">OUR SERVICE</button>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "https://pix6.agoda.net/hotelImages/505/50558/50558_14032817590018899313.jpg?s=1024x768" height="360" alt = "room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3><ins>SINGLE ROOM</ins></h3>
-                        <p>Room size: 15 m²/200 ft²</p>
-                        <p> Non-smoking</p>
-                        <p>1 queen bed</p>
-                        <br>
-                        <p>Maximum number of Persons is <b>ONE</b> .</p>
-                        <p class = "rate">
-                            <span>99.00LE /</span> Per Night
-                        </p>
-                        <a href="registration.html" target="_blank">
-                            <button type = "button" class = "btn">BOOK NOW</button>
-                        </a>
-                        <div class="room-service">
-                            <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
-                            <a href="service.html">
-                                <button type = "button" class = "btn">OUR SERVICE</button>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class = "room">
-                    <div class = "room-image">
-                        <img src = "https://pix6.agoda.net/hotelImages/2287257/15335958/c76a0451f8036f4e636fb1690b8a3484.jpg?s=1024x768" alt = "room image">
-                    </div>
-                    <div class = "room-text">
-                        <h3><ins>SUITE ROOM</ins></h3>
-                        
-                        <p>Room size: 83 m²/893 ftz</p>
-                        <p>Non-smoking</p>
-                        <p>2 double beds</p>
-                        <br>
-                        <p>Maximum number of persons is <b>FIVE</b> </p>
 
-                        <p class = "rate">
-                            <span>349.99LE /</span> Per Night
-                        </p>
-                        <a href="registration.html" target="_blank">
-                            <button type = "button" class = "btn">BOOK NOW</button>
-                        </a>
-                        <div class="room-service">
-                            <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
-                            <a href="service.html">
-                                <button type = "button" class = "btn">OUR SERVICE</button>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+        <header class = "rest" id = "rest">
+            <div class = "head-top">
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+                <div class="right-col">
+                    <img src="media/play.png" id="icon">
+                </div>
+                <audio id="mySong">
+                    <source src="media/song.mp3" type="audio/mp3">
+                </audio>
                 
-                
-              
-                
+            <script>
+                var mySong = document.getElementById("mySong");
+                var icon = document.getElementById("icon");
+                icon.onclick = function(){
+                    if(mySong.paused){
+                        mySong.play();
+                        icon.src = "media/pause.png";
+                    }else{
+                        mySong.pause();
+                        icon.src ="media/play.png";
+                    }
+                }
+            </script>
             </div>
+
+        </header>
+
+        <div class = "sidenav" id = "sidenav">
+
+        <span class = "cancel-btn" id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+        </span>
+
+        <ul>
+            <li><a href = "room.html">ROOMS</a></li>
+            <li><a href = "customer.html">CUSTOMERS</a></li>
+            <li><a href = "service.html">SERVICE</a></li>
+            <li><a href = "project.html">OWNERS</a></li>
+            
+        </ul>
+
+        <a href = "registration.html">
+            <button class = "btn sign-up">SIGN UP</button>
+        </a>
+
+            
+
+        </div>
+        <section class = "rooms sec-width" id = "rooms">
+        <div class = "title">
+            <p style="color:rgb(117, 0, 0);" style="font-size:35px;">Rooms</p>
+        </div>
+        <div class = "rooms-container">
+        
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.regalhotel.com/uploads/roh/accommodations/20190923/RegalOriental_ExecutiveClubRoom_RW04.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>DOUBLE ROOM</ins></h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>THREE</b> .</p>
+                    <p class = "rate">
+                        <span>999LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html">
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                    
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.regalhotel.com/uploads/roh/accommodations/20190923/RegalOriental_Superior_RW01(1).jpg" height="370" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>TWIN ROOM</ins> </h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>TWO</b> .</p>
+                    <p class = "rate">
+                        <span>799LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                        
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html" >
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.regalhotel.com/uploads/roh/accommodations/720x475/ROH_RM245-2F-Premier-Room-touch-up-V6-720x475.jpg" height="360" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>SINGLE ROOM</ins></h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>ONE</b> .</p>
+                    <p class = "rate">
+                        <span>399LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html">
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.regalhotel.com/uploads/roh/accommodations/20190923/RegalOriental_ExecutiveSuite1429_RW04.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>SUITE ROOM</ins></h3>
+                    
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of persons is <b>FIVE</b> </p>
+
+                    <p class = "rate">
+                        <span>1799LE /</span> Per Night
+                    </p>
+                    <a href="registration.html" >
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html">
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.olympicpalacehotel.com/_storageWeb_/n/17786419220516/b/692055490556/Double-room-sea-view.jpeg" height="370" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>DOUBLE ROOM WITH SEA VIEW</ins> </h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>THREE</b> .</p>
+                    <p class = "rate">
+                        <span>1299LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                        
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html" >
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://lh3.googleusercontent.com/proxy/HOaDurYtJp3qHj-MRM0-iu1Obqiyg_2IjqV7SId4dCfnuDIiBTD2wQnz1JQ_c6PyNQx07dfy8ir49P0U0AFXWSnnJtX8MayON0qeqCY5goxAOIGw37Pv9T_GPXTR5Yy8g8m-Dg" height="370" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>TRIBLE ROOM WITH SEA VIEW</ins> </h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>THREE</b> .</p>
+                    <p class = "rate">
+                        <span>1999LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                        
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html" >
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.regalhotel.com/uploads/roh/accommodations/20190923/RegalOriental_QuadrupleRoom_RW02.jpg" height="370" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3><ins>FAMILY ROOM</ins> </h3>
+                    <p>Media & Entertainment <br>
+                        Satellite / Cable TV <br>
+                        LCD TV <br>
+                        Refreshments <br>
+                        In-room coffee / tea making facilities <br>
+                        <br>
+                        <br>
+                        <br>
+                        Bath & Personal Care <br>
+                        Hair dryer <br>
+                        Office Equipment & Stationery <br>
+                        Full-size Writing Desk <br>
+                        Alarm Clock / Radio <br>
+                        Speaker Phone / Multiline Phone <br>
+                        In-room Electronic Safe <br>
+                        International Direct Dial Telephone</p>
+                    <br>
+                    <p>Maximum number of Persons is <b>FOUR </b> .</p>
+                    <p class = "rate">
+                        <span>2399LE /</span> Per Night
+                    </p>
+                    <a href="registration.html">
+                        <button type = "button" class = "btn">BOOK NOW</button>
+                        
+                    </a>
+                    <div class="room-service">
+                        <h4>TO KNOW ABOUT OUR SERVICE CLICK HERE</h4>
+                        <a href="service.html" >
+                            <button type = "button" class = "btn">OUR SERVICE</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            
+        
+            <script src="script.js"></script>
+        </div>
         </section>
-    </body>
+        </body>
