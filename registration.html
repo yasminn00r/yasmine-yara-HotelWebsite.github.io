@@ -17,7 +17,23 @@
     
     </script>
     <style>
-    form
+      .right-col{
+
+
+        float: right;
+        margin-right: 6%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        background: #c9c9c9d0;
+        border-radius: 50%;
+      }
+      #icon{
+        width: 80px;
+        cursor: pointer;
+
+      }
+      form
     {
       padding: 30px;
       margin-right:65%;
@@ -30,7 +46,7 @@
       
     }
     body{
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1619634727222-3318c5e9ebd7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://q-xx.bstatic.com/xdata/images/hotel/840x460/283967302.jpg?k=c0c7056da5c3b2e220061ce14e14290b41f213d3c6fc48511da04867da2817b4&o=") center/cover no-repeat;
       margin-top: -10%;
     }
     table{
@@ -40,18 +56,18 @@
     }
     table td{
       padding: 15px;
-      background-color: #9a9a9a;
-      border: 5px solid #7a7a7a;
+      background-color: white;
+      border: 5px solid #af8888;
+      
     }
     table thead td{
-      background-color: #575757;
+      background-color: rgba(255, 255, 255, 0.562);
       color:black;
       font-weight: bold;
       text-align: center;
-      border-color: #7a7a7a;
+      border-color: #b18181;
     }
     .more{
-      background-color: #575757;
       font-size: 20px;
       color: black;
 
@@ -62,126 +78,160 @@
     </style>
   </head>
   <body>
-      <form name="form" onsubmit="return validateForm()" action="done.html"> 
-      <h1>PLEASE FILL THE FORM!</h1>
-      <label for="chkin" style="margin-left:-80px;">
-        Check-in date:
-      </label>
-      
-      <label for="name" style="margin-left:150px;">
-        Name:
-      </label>
-      <br>
-      
-      <input id="chkin" name="chkin" type="date" style="margin-left:10px;">
-      
-      <input id="name" name="name" type="text" placeholder="Name" style="margin-left:118px;" size="18px" required=""><br>
-      <br>
-      
-      <label for="chkout" style="margin-left:-80px;">
-        Check-out date:
-      </label>
-      
-      <label for="mail" style="margin-left:150px;">
-        Email:
-      </label>
-      <br>
-      
-      <input id="chkout" name="chkout" type="date" style="margin-left:10px;">
-      
-      <input id="mail" name="mail" type="email" placeholder="Example@yahoo.com" style="margin-left:118px;" size="18px"><br>
-      <br>
-      
-      <label style="margin-left:10px;">
-        Gender:
-      </label>
-      
-      <label for="ng" style="margin-left:190px;">
-        Number of guests:
-      </label>
-      <br>
-      
-      
-      <label for="male" style="margin-left:-10px;">
-        Male:
-      </label>
-      <input id="male" name="gender" type="radio" style="margin-left:10px;">
-      
-      <label for="female" style="margin-left:10px;">
-        Female:
-      </label>
-      <input id="female" name="gender" type="radio" style="margin-left:10px;">
-      
-      
-      
-      <select id="ng" name="ng" style="margin-left:120px;">
-      <option style="display:none;">
-        Number of guests
-      </option>
-      <option>
-        1
-      </option>
-      <option>
-        2
-      </option>
-      <option>
-        3
-      </option>
-      <option>
-        4
-      </option>
-      <option>
-        5
-      </option>
-      </select>
-      <br><br>
-      
-      
-      
-      <input id="submit" name="submit" type="submit" value="Submit" style="margin-left:10px;margin-bottom:10px; color: red;"><br>
-      
-      </form>
-
-      <div>
-        <table>
-          <caption class="more">
-            <b>TO KNOW MORE ABOUT OUR HOTEL</b>
-          </caption>
-          <thead>
-            <tr>
-              <td>ROOM TYPE</td>
-              <td>MAX NUMBER OF GUESTS</td>
-              <td>PRICE</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>TWIN ROOM</td>
-              <td>FOUR</td>
-              <td>199.99LE</td>
-            </tr>
-            <tr>
-              <td>DOUBLE ROOM</td>
-              <td>TWO</td>
-              <td>149.99LE </td>
-            </tr>
-            <tr>
-              <td>SINGLE ROOM</td>
-              <td>ONE</td>
-              <td>99.00LE</td>
-            </tr>
-            <tr>
-              <td>SUITE ROOM</td>
-              <td>FIVE</td>
-              <td>349.99LE</td>
-            </tr>
-          </tbody>
-          
-        </table>
-      </div>
+    <div class="right-col">
+      <img src="media/play.png" id="icon">
+  </div>
+  <audio id="mySong">
+      <source src="media/song.mp3" type="audio/mp3">
+  </audio>
   
-      
-  </body>     
-
-</html>       
-   
+<script>
+  var mySong = document.getElementById("mySong");
+  var icon = document.getElementById("icon");
+  icon.onclick = function(){
+      if(mySong.paused){
+          mySong.play();
+          icon.src = "media/pause.png";
+      }else{
+          mySong.pause();
+          icon.src ="media/play.png";
+      }
+   }
+  </script>
+       <form name="form" onsubmit="return validateForm()" action="done.html"> 
+        <h1>PLEASE FILL THE FORM!</h1>
+        <label for="chkin" style="margin-left:-80px;">
+          Check-in date:
+        </label>
+        
+        <label for="name" style="margin-left:150px;">
+          Name:
+        </label>
+        <br>
+        
+        <input id="chkin" name="chkin" type="date" style="margin-left:10px;">
+        
+        <input id="name" name="name" type="text" placeholder="Name" style="margin-left:118px;" size="18px" required=""><br>
+        <br>
+        
+        <label for="chkout" style="margin-left:-80px;">
+          Check-out date:
+        </label>
+        
+        <label for="mail" style="margin-left:150px;">
+          Email:
+        </label>
+        <br>
+        
+        <input id="chkout" name="chkout" type="date" style="margin-left:10px;">
+        
+        <input id="mail" name="mail" type="email" placeholder="Example@yahoo.com" style="margin-left:118px;" size="18px"><br>
+        <br>
+        
+        <label style="margin-left:10px;">
+          Gender:
+        </label>
+        
+        <label for="ng" style="margin-left:190px;">
+          Number of guests:
+        </label>
+        <br>
+        
+        
+        <label for="male" style="margin-left:-10px;">
+          Male:
+        </label>
+        <input id="male" name="gender" type="radio" style="margin-left:10px;">
+        
+        <label for="female" style="margin-left:10px;">
+          Female:
+        </label>
+        <input id="female" name="gender" type="radio" style="margin-left:10px;">
+        
+        
+        
+        <select id="ng" name="ng" style="margin-left:120px;">
+        <option style="display:none;">
+          Number of guests
+        </option>
+        <option>
+          1
+        </option>
+        <option>
+          2
+        </option>
+        <option>
+          3
+        </option>
+        <option>
+          4
+        </option>
+        <option>
+          5
+        </option>
+        </select>
+        <br><br>
+        
+        
+        
+        <input id="submit" name="submit" type="submit" value="Submit" style="margin-left:10px;margin-bottom:10px; color: red;"><br>
+        
+        </form>
+  
+        <div>
+          <table>
+            <caption class="more">
+              <h1><ins><i>TO KNOW MORE ABOUT OUR HOTEL</i></ins></h1>
+            </caption>
+            <thead>
+              <tr>
+                <td>ROOM TYPE</td>
+                <td>MAX NUMBER OF GUESTS</td>
+                <td>PRICE</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TWIN ROOM</td>
+                <td>TWO</td>
+                <td>799LE</td>
+              </tr>
+              <tr>
+                <td>DOUBLE ROOM</td>
+                <td>THREE</td>
+                <td>999LE </td>
+              </tr>
+              <tr>
+                <td>SINGLE ROOM</td>
+                <td>ONE</td>
+                <td>399LE</td>
+              </tr>
+              <tr>
+                <td>SUITE ROOM</td>
+                <td>FIVE</td>
+                <td>1799LE</td>
+              </tr>
+              <tr>
+                <td>DOUBLE ROOM WITH SEA VIEW</td>
+                <td>THREE</td>
+                <td>1299LE</td>
+              </tr>
+              <tr>
+                <td>TRIPLE ROOM WITH SEA VIEW</td>
+                <td>THREE</td>
+                <td>1999LE</td>
+              </tr>
+              <tr>
+                <td>FAMILY ROOM</td>
+                <td>FOUR</td>
+                <td>2399LE</td>
+              </tr>
+            </tbody>
+            
+          </table>
+        </div>
+    
+        
+    </body>     
+  
+  </html>
