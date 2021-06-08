@@ -2,14 +2,14 @@
 
 :root{
     --transition: all 0.8s ease;
-    --yellow:green;
+    --yellow:rgb(151, 0, 0);
     --dark: black;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display',serif;
 }
 ul li{
     list-style: none;
@@ -72,7 +72,7 @@ img{
 
 
 .header{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Hotel%20Website%20Designs.jpg?t=1524901023391") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://q-xx.bstatic.com/xdata/images/hotel/840x460/110193969.jpg?k=3d01170dc81904b8dbf4864b0b6951c245db20f49ba7dde9f371bdfcb59d26f1&o=") center/cover no-repeat;
     min-height: 100vh;
     color: #fff;
     padding: 25px;
@@ -112,6 +112,7 @@ img{
     transition: var(--transition);
     color: black;
 }
+
 .head-bottom p{
     opacity: 0.7;
     font-size: 20px;
@@ -134,13 +135,15 @@ img{
 
 
 .sidenav{
-    background: #9a9a9ac4;
+    background: #a7a4a4;
     color: black;
     position: fixed;
     top: 0;
     bottom: 0;
-    right: -100%;
+    left: -100%;
     width: 300px;
+    border-radius:8px;
+    border:5px solid black;
     padding: 20px;
     transition: var(--transition);
     z-index: 10;
@@ -207,17 +210,13 @@ img{
 }
 
 
-.services{
-    margin-top: 40px;
-    padding: 40px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1619634727222-3318c5e9ebd7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") center/cover no-repeat;
-}
+
 .service{
     display: flex;
     margin: 30px 0;
 }
 .line{
-    background: #b6b6b6;
+    
     color: black;
 }
 
@@ -235,13 +234,18 @@ img{
     background: var(--yellow);
     color: #fff;
 }
+.box{
+    margin-top: 350px;
+    margin-left: -100%;
+}
 .service-customer{
-    background: #9a9a9a;
+    background: rgba(255, 235, 235, 0.562);
     padding: 35px;
     width: 100%;
     height: 100px;
     text-align: center;
     margin: 24px 0;
+    
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
     cursor: pointer;
     transition: var(--transition);
@@ -249,6 +253,7 @@ img{
 
 }
 .service-customer button{
+    color: white;
     margin-top: 2%;
     background: var(--yellow);
 }
@@ -270,15 +275,11 @@ img{
 
 
 
-.rooms{
-    margin: 40px 0;
-   
-}
 .room{
     margin: 45px 0;
     padding-bottom: 25px;
-    background: #434d52;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.562);
+    color: black;
 }
 .room-text{
     padding: 5px 20px;
@@ -321,7 +322,7 @@ img{
     color: #fff;
 }
 .room-service {
-    background: #9a9a9a;
+    background: #b3aeae;
     padding: 35px;
     text-align: center;
     margin: 24px 0;
@@ -370,14 +371,9 @@ img{
 
 
 
-.customers{
-    margin-top: 40px;
-    padding: 40px 0;
-    background:rgb(255, 225, 187) url("https://images.unsplash.com/photo-1619634727222-3318c5e9ebd7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") center/cover no-repeat fixed;
 
-}
 .customer{
-    background: #b6b6b6;
+    background:#b3aeae;
     padding: 35px;
     text-align: center;
     margin: 24px 0;
@@ -546,7 +542,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1619634727222-3318c5e9ebd7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://q-xx.bstatic.com/xdata/images/hotel/840x460/283967302.jpg?k=c0c7056da5c3b2e220061ce14e14290b41f213d3c6fc48511da04867da2817b4&o=") center/cover no-repeat;
     background-size: cover;
     background-position: center; 
 }
