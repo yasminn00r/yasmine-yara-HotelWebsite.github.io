@@ -6,60 +6,150 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <style>
+            .rest{
+            
+                color: #fff;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-content: stretch;
+            }
+            
         
+            .right-col{
+
+                float: right;
+                margin-right: 6%;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                background: #c9c9c9d0;
+                border-radius: 50%;
+                
+                
+            }
+            #icon{
+                width: 80px;
+                cursor: pointer;
+                
+            }
+    
+           
+        </style>
     </head>
     <body>
+        <header class = "rest" id = "rest">
+            <div class = "head-top">
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+                <div class="right-col">
+                    <img src="media/play.png" id="icon">
+                </div>
+                <audio id="mySong">
+                    <source src="media/song.mp3" type="audio/mp3">
+                </audio>
+                
+            <script>
+                var mySong = document.getElementById("mySong");
+                var icon = document.getElementById("icon");
+                icon.onclick = function(){
+                    if(mySong.paused){
+                        mySong.play();
+                        icon.src = "media/pause.png";
+                    }else{
+                        mySong.pause();
+                        icon.src ="media/play.png";
+                    }
+                }
+            </script>
+            </div>
+        </header>
+        <div class = "sidenav" id = "sidenav">
+            
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+            
+            <ul>
+                <li><a href = "room.html" >ROOMS</a></li>
+                <li><a href = "customer.html">CUSTOMERS</a></li>
+                <li><a href = "service.html">SERVICE</a></li>
+                <li><a href = "project.html">OWNERS</a></li>
+                
+            </ul>
+            
+            <a href = "registration.html">
+                <button class = "btn sign-up">SIGN UP</button>
+            </a>
+            
+                
+            
+        </div>
         <section class = "services sec-width" id = "services">
             <div class = "title">
-                <p style="color:rgb(117, 0, 0);" style="font-size:35px;">services</p>
+                <p style="color:rgb(117, 0, 0);" style="font-size:35px;"><b>services</b></p>
             </div>
             <div class = "services-container">
                 <!-- single service -->
                 <article class = "service">
                     
                     <div class = "service-content">
-                        <h2 class="line"><ins>Drinking and snacking</ins></h2>
+                        <strong>
+                            <h2 class="line"><ins>RESTURANTS AND BAR</ins></h2>
+                        </strong>
+                        
                         <p><i>There are coffee shop, restaurants and room services</i>  </p>
-                       
+                        <a href = "food.html">
+                            <button type = "button" class = "btn">Know More</button>
+                        </a>
                     </div>
+
                 </article>
                 <!-- end of single service -->
                 <!-- single service -->
                 <article class = "service">
                   
                     <div class = "service-content">
-                        <h2 class="line"><ins>Ways to relax</ins></h2>
+                        <strong>
+                            <h2 class="line"><ins>Ways to relax</ins></h2>
+                        </strong>
+                  
                         <p><i>Fitness center, Ticket services, Spa, Yoga room, Massage, Swimming pool [indoor], Sauna and Swimming pool [outdoor]</i> </p>
-                        
+                        <a href = "relax.html">
+                            <button type = "button" class = "btn">Know More</button>
+                        </a>
                     </div>
                 </article>
                 <!-- end of single service -->
                 <!-- single service -->
                 <article class = "service">
                     <div class = "service-content">
-                        <h2 class="line"><ins>Cleanliness and Safety</ins></h2>
+                        <strong>
+                            <h2 class="line"><ins>Cleanliness and Safety</ins></h2>
+                        </strong>
+                  
                         <p> <i> Body thermometer, First aid kit, Protective screens in common areas, Daily disinfection in all rooms, Free face masks, Safe dining setup, Daily disinfection in common areas, Hand sanitizer, Staff trained in safety protocol, Doctor/nurse on call, Hygiene certification, Sterilizing equipment, Face coverings on staff, Physical distancing of at least 1 meter, Temperature check for guests and staff</i></p>
-                      
+                        <a href = "clean.html">
+                            <button type = "button" class = "btn">Know More</button>
+                        </a>
                     </div>
                 </article>
                 <!-- end of single service -->
-                <!-- single service -->
-                <article class = "service">
-                    <div class = "service-content">
-                        <h2 class="line"><ins>Avilable in all rooms</ins></h2>
-                        <p><i>Air conditioning, Hair dryer, Refrigerator, Alarm clock, Heating, Satellite/cable channels, Bathrobes, In-room safe box, Shower, Bathtub, Interconnecting room(s) available, Slippers, Carpeting,Internet access – wireless, Smoke detector, ClosetIroning facilities, Telephone, Clothes rackLinens, Toiletries, Coffee/tea maker, Microwave, Towels, Desk, Wake-up service, Free bottled water, Non-smoking</i></p>
-                       
+                <article class="box">
+                    <div class="service-customer">
+                        <h4>TO KNOW ABOUT OUR  CUSTOMER's FEEDBACK, CLICK HERE</h4>
+                        <a href="customer.html">
+                            <button type = "button" class = "btn">FEEDBACK</button>
+                        </a>
                     </div>
+
                 </article>
-                <!-- end of single service -->
-                <div class="service-customer">
-                    <h4>TO KNOW ABOUT OUR  CUSTOMER's FEEDBACK, CLICK HERE</h4>
-                    <a href="customer.html">
-                        <button type = "button" class = "btn">FEEDBACK</button>
-                    </a>
-                </div>
+               
                
             </div>
+            <script src="script.js"></script>
         </section>
 
     </body>
